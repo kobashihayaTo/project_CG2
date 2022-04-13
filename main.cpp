@@ -54,6 +54,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	MSG msg{};
 
+	//DirectX初期化　ここから
+
+	//DirectX初期化　ここまで
 
 	//ゲームループ
 	while (true) {
@@ -67,6 +70,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		if (msg.message == WM_QUIT) {
 			break;
 		}
+
+		//DirectX初期化　ここから
+
+	//DirectX初期化　ここまで
 	}
 	//ウィンドウクラスを登録解除
 	UnregisterClass(w.lpszClassName, w.hInstance);
