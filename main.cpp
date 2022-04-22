@@ -291,6 +291,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,//デバック用設定
 		0,
 		&psBlob, &errorBlob);
+
 	//エラーなら
 	if (FAILED(result)) {
 		//errorBlobからのエラー内容をstring型にコピー
